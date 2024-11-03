@@ -1,0 +1,43 @@
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  button.edit {
+    color: #ff6f00;
+  }
+  
+  button.delete {
+    color: #e65c00;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+
+  button img {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    color: #ff6f00;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 1.5rem;
+  }
+  
+  .actions-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  button {
+    background-color: unset;
+    border: unset;
+    cursor: pointer;
+  }

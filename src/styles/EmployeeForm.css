@@ -1,0 +1,148 @@
+.employee-form {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px 30px;
+  background-color: #f9fafb;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #333;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 0px;
+  transition: border-color 0.3s;
+  font-size: 0.9rem;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="tel"]:focus,
+select:focus {
+  border-color: #ff6f00;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 111, 0, 0.3);
+}
+
+input[type="tel"] {
+  margin: 0;
+  margin-left: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #ff6f00;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 30px;
+}
+
+button:hover {
+  background-color: #e65c00;
+}
+
+.error-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff4444;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 1000;
+  animation: slideIn 0.3s ease-out;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  font-size: 0.9rem;
+}
+
+.error-popup button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.form-header {
+  margin-bottom: 20px;
+}
+
+.back-button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: rgb(157 157 157);
+}
+
+.back-button:hover {
+  background-color: rgb(157 157 157);
+  opacity: 0.8;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.back-button {
+  width: 25%;
+  margin-right: 10px;
+}
+
+@media (max-width: 400px) {
+  .employee-form {
+    max-width: 275px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 1090px) {
+  .employee-form {
+    max-width: 300px;
+  }
+}
